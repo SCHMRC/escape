@@ -1,0 +1,219 @@
+0 verbose cli /home/pi/.nvm/versions/node/v18.17.1/bin/node /home/pi/.nvm/versions/node/v18.17.1/bin/npm
+1 info using npm@9.6.7
+2 info using node@v18.17.1
+3 timing npm:load:whichnode Completed in 13ms
+4 timing config:load:defaults Completed in 23ms
+5 timing config:load:file:/home/pi/.nvm/versions/node/v18.17.1/lib/node_modules/npm/npmrc Completed in 39ms
+6 timing config:load:builtin Completed in 43ms
+7 timing config:load:cli Completed in 68ms
+8 timing config:load:env Completed in 5ms
+9 timing config:load:file:/home/pi/project01/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 10ms
+11 timing config:load:file:/home/pi/.npmrc Completed in 1ms
+12 timing config:load:user Completed in 4ms
+13 timing config:load:file:/home/pi/.nvm/versions/node/v18.17.1/etc/npmrc Completed in 1ms
+14 timing config:load:global Completed in 3ms
+15 timing config:load:setEnvs Completed in 11ms
+16 timing config:load Completed in 175ms
+17 timing npm:load:configload Completed in 176ms
+18 timing npm:load:mkdirpcache Completed in 3ms
+19 timing npm:load:mkdirplogs Completed in 3ms
+20 verbose title npm i mfrc522-rpi
+21 verbose argv "i" "mfrc522-rpi"
+22 timing npm:load:setTitle Completed in 13ms
+23 timing config:load:flatten Completed in 37ms
+24 timing npm:load:display Completed in 46ms
+25 verbose logfile logs-max:10 dir:/home/pi/.npm/_logs/2023-09-15T19_25_17_863Z-
+26 verbose logfile /home/pi/.npm/_logs/2023-09-15T19_25_17_863Z-debug-0.log
+27 timing npm:load:logFile Completed in 121ms
+28 timing npm:load:timers Completed in 1ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 384ms
+31 timing arborist:ctor Completed in 9ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 1271ms
+34 timing idealTree:userRequests Completed in 15ms
+35 silly idealTree buildDeps
+36 silly fetch manifest mfrc522-rpi@*
+37 timing arborist:ctor Completed in 2ms
+38 http fetch GET 200 https://registry.npmjs.org/mfrc522-rpi 2101ms (cache miss)
+39 silly placeDep ROOT mfrc522-rpi@2.1.3 OK for: project01@1.0.0 want: *
+40 silly fetch manifest rpi-softspi@^1.0.5
+41 silly fetch manifest rpio@^1.3.0
+42 http fetch GET 200 https://registry.npmjs.org/rpi-softspi 920ms (cache miss)
+43 http fetch GET 200 https://registry.npmjs.org/rpio 1093ms (cache miss)
+44 timing idealTree:#root Completed in 3358ms
+45 silly placeDep ROOT rpi-softspi@1.0.5 OK for: mfrc522-rpi@2.1.3 want: ^1.0.5
+46 silly fetch manifest rpio@*
+47 silly placeDep ROOT rpio@1.7.1 OK for: mfrc522-rpi@2.1.3 want: ^1.3.0
+48 silly fetch manifest nan@~2.14.0
+49 http fetch GET 200 https://registry.npmjs.org/nan 251ms (cache revalidated)
+50 timing idealTree:node_modules/mfrc522-rpi Completed in 334ms
+51 timing idealTree:node_modules/rpi-softspi Completed in 1ms
+52 silly placeDep node_modules/rpio nan@2.14.2 OK for: rpio@1.7.1 want: ~2.14.0
+53 timing idealTree:node_modules/rpio Completed in 25ms
+54 timing idealTree:node_modules/rpio/node_modules/nan Completed in 0ms
+55 timing idealTree:buildDeps Completed in 3732ms
+56 timing idealTree:fixDepFlags Completed in 23ms
+57 warn EBADENGINE Unsupported engine {
+57 warn EBADENGINE   package: 'rc522@0.2.0',
+57 warn EBADENGINE   required: { node: '0.12.9' },
+57 warn EBADENGINE   current: { node: 'v18.17.1', npm: '9.6.7' }
+57 warn EBADENGINE }
+58 timing idealTree Completed in 5111ms
+59 timing reify:loadTrees Completed in 5122ms
+60 timing reify:diffTrees Completed in 1378ms
+61 silly reify moves {}
+62 timing reify:retireShallow Completed in 2ms
+63 timing reify:createSparse Completed in 18ms
+64 timing reify:loadBundles Completed in 0ms
+65 silly audit bulk request {
+65 silly audit   '@serialport/binding-abstract': [ '8.0.6' ],
+65 silly audit   '@serialport/binding-mock': [ '8.0.6' ],
+65 silly audit   '@serialport/bindings': [ '8.0.8' ],
+65 silly audit   '@serialport/parser-byte-length': [ '8.0.6' ],
+65 silly audit   '@serialport/parser-cctalk': [ '8.0.6' ],
+65 silly audit   '@serialport/parser-delimiter': [ '8.0.6' ],
+65 silly audit   '@serialport/parser-readline': [ '8.0.6' ],
+65 silly audit   '@serialport/parser-ready': [ '8.0.6' ],
+65 silly audit   '@serialport/parser-regex': [ '8.0.6' ],
+65 silly audit   '@serialport/stream': [ '8.0.6' ],
+65 silly audit   'abstract-io': [ '1.6.0' ],
+65 silly audit   'ansi-regex': [ '2.1.1' ],
+65 silly audit   'ansi-styles': [ '3.2.1' ],
+65 silly audit   'color-convert': [ '1.9.3', '1.2.2' ],
+65 silly audit   aproba: [ '1.2.0' ],
+65 silly audit   'are-we-there-yet': [ '1.1.7' ],
+65 silly audit   'base64-js': [ '1.5.1' ],
+65 silly audit   bindings: [ '1.5.0' ],
+65 silly audit   bl: [ '4.1.0' ],
+65 silly audit   'readable-stream': [ '3.6.2', '2.3.8' ],
+65 silly audit   'browser-serialport': [ '2.1.0' ],
+65 silly audit   buffer: [ '5.7.1' ],
+65 silly audit   chalk: [ '2.1.0' ],
+65 silly audit   chownr: [ '1.1.4' ],
+65 silly audit   clone: [ '2.1.2' ],
+65 silly audit   'code-point-at': [ '1.1.0' ],
+65 silly audit   'color-name': [ '1.1.3' ],
+65 silly audit   'console-control-strings': [ '1.1.0' ],
+65 silly audit   'core-util-is': [ '1.0.3' ],
+65 silly audit   debug: [ '4.3.4' ],
+65 silly audit   'decompress-response': [ '4.2.1' ],
+65 silly audit   'deep-extend': [ '0.6.0' ],
+65 silly audit   delegates: [ '1.0.0' ],
+65 silly audit   'detect-libc': [ '1.0.3' ],
+65 silly audit   'end-of-stream': [ '1.4.4' ],
+65 silly audit   epoll: [ '4.0.2' ],
+65 silly audit   'escape-string-regexp': [ '1.0.5' ],
+65 silly audit   'expand-template': [ '2.0.3' ],
+65 silly audit   'file-uri-to-path': [ '1.0.0' ],
+65 silly audit   firmata: [ '2.3.0' ],
+65 silly audit   'firmata-io': [ '2.3.0' ],
+65 silly audit   'fs-constants': [ '1.0.0' ],
+65 silly audit   gauge: [ '2.7.4' ],
+65 silly audit   'github-from-package': [ '0.0.0' ],
+65 silly audit   'has-flag': [ '2.0.0' ],
+65 silly audit   'has-unicode': [ '2.0.1' ],
+65 silly audit   'i2c-bus': [ '5.2.3' ],
+65 silly audit   ieee754: [ '1.2.1' ],
+65 silly audit   inherits: [ '2.0.4' ],
+65 silly audit   ini: [ '1.3.8' ],
+65 silly audit   'ini-builder': [ '1.1.1' ],
+65 silly audit   'is-fullwidth-code-point': [ '1.0.0' ],
+65 silly audit   isarray: [ '1.0.0' ],
+65 silly audit   'j5-io': [ '3.2.0' ],
+65 silly audit   'j5-io-types': [ '2.5.0' ],
+65 silly audit   'johnny-five': [ '2.1.0' ],
+65 silly audit   'lodash.clonedeep': [ '4.5.0' ],
+65 silly audit   'lodash.debounce': [ '4.0.8' ],
+65 silly audit   'mimic-response': [ '2.1.0' ],
+65 silly audit   minimist: [ '1.2.8' ],
+65 silly audit   'mkdirp-classic': [ '0.5.3' ],
+65 silly audit   ms: [ '2.1.2' ],
+65 silly audit   nan: [ '2.18.0', '2.14.2' ],
+65 silly audit   nanotimer: [ '0.3.10' ],
+65 silly audit   'napi-build-utils': [ '1.0.2' ],
+65 silly audit   'node-abi': [ '2.30.1' ],
+65 silly audit   'noop-logger': [ '0.1.1' ],
+65 silly audit   npmlog: [ '4.1.2' ],
+65 silly audit   'number-is-nan': [ '1.0.1' ],
+65 silly audit   'object-assign': [ '4.1.1' ],
+65 silly audit   once: [ '1.4.0' ],
+65 silly audit   onoff: [ '6.0.3' ],
+65 silly audit   pigpio: [ '1.3.0' ],
+65 silly audit   'prebuild-install': [ '5.3.6' ],
+65 silly audit   'process-nextick-args': [ '2.0.1' ],
+65 silly audit   pump: [ '3.0.0' ],
+65 silly audit   raspi: [ '6.0.1' ],
+65 silly audit   'raspi-board': [ '7.4.0' ],
+65 silly audit   'raspi-gpio': [ '6.2.2' ],
+65 silly audit   'raspi-i2c': [ '6.2.4' ],
+65 silly audit   'raspi-io': [ '11.0.0' ],
+65 silly audit   'raspi-led': [ '2.1.2' ],
+65 silly audit   'raspi-peripheral': [ '3.0.4' ],
+65 silly audit   'raspi-serial': [ '6.0.0' ],
+65 silly audit   'raspi-soft-pwm': [ '6.0.2' ],
+65 silly audit   rc: [ '1.2.8' ],
+65 silly audit   rc522: [ '0.2.0' ],
+65 silly audit   'safe-buffer': [ '5.1.2' ],
+65 silly audit   semver: [ '5.7.2' ],
+65 silly audit   serialport: [ '8.0.8' ],
+65 silly audit   'set-blocking': [ '2.0.0' ],
+65 silly audit   'signal-exit': [ '3.0.7' ],
+65 silly audit   'simple-concat': [ '1.0.1' ],
+65 silly audit   'simple-get': [ '3.1.1' ],
+65 silly audit   string_decoder: [ '1.1.1' ],
+65 silly audit   'string-width': [ '1.0.2' ],
+65 silly audit   'strip-ansi': [ '3.0.1' ],
+65 silly audit   'strip-json-comments': [ '2.0.1' ],
+65 silly audit   'supports-color': [ '4.5.0' ],
+65 silly audit   'tar-fs': [ '2.1.1' ],
+65 silly audit   'tar-stream': [ '2.2.0' ],
+65 silly audit   temporal: [ '0.7.1' ],
+65 silly audit   'tunnel-agent': [ '0.6.0' ],
+65 silly audit   'util-deprecate': [ '1.0.2' ],
+65 silly audit   'which-pm-runs': [ '1.1.0' ],
+65 silly audit   'wide-align': [ '1.1.5' ],
+65 silly audit   wrappy: [ '1.0.2' ],
+65 silly audit   'mfrc522-rpi': [ '2.1.3' ],
+65 silly audit   'rpi-softspi': [ '1.0.5' ],
+65 silly audit   rpio: [ '1.7.1' ]
+65 silly audit }
+66 silly tarball no local data for rpi-softspi@https://registry.npmjs.org/rpi-softspi/-/rpi-softspi-1.0.5.tgz. Extracting by manifest.
+67 silly tarball no local data for rpio@https://registry.npmjs.org/rpio/-/rpio-1.7.1.tgz. Extracting by manifest.
+68 silly tarball no local data for mfrc522-rpi@https://registry.npmjs.org/mfrc522-rpi/-/mfrc522-rpi-2.1.3.tgz. Extracting by manifest.
+69 silly tarball no local data for nan@https://registry.npmjs.org/nan/-/nan-2.14.2.tgz. Extracting by manifest.
+70 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 515ms
+71 timing auditReport:getReport Completed in 566ms
+72 silly audit report {}
+73 timing auditReport:init Completed in 0ms
+74 timing reify:audit Completed in 575ms
+75 http fetch GET 200 https://registry.npmjs.org/mfrc522-rpi/-/mfrc522-rpi-2.1.3.tgz 925ms (cache miss)
+76 timing reifyNode:node_modules/mfrc522-rpi Completed in 1044ms
+77 http fetch GET 200 https://registry.npmjs.org/nan/-/nan-2.14.2.tgz 1379ms (cache miss)
+78 timing reifyNode:node_modules/rpio/node_modules/nan Completed in 1518ms
+79 http fetch GET 200 https://registry.npmjs.org/rpi-softspi/-/rpi-softspi-1.0.5.tgz 1696ms (cache miss)
+80 timing reifyNode:node_modules/rpi-softspi Completed in 1808ms
+81 http fetch GET 200 https://registry.npmjs.org/rpio/-/rpio-1.7.1.tgz 1755ms (cache miss)
+82 timing reifyNode:node_modules/rpio Completed in 1875ms
+83 timing reify:unpack Completed in 1878ms
+84 timing reify:unretire Completed in 1ms
+85 timing build:queue Completed in 7ms
+86 info run rpio@1.7.1 install node_modules/rpio node-gyp rebuild
+87 info run rpio@1.7.1 install { code: 0, signal: null }
+88 timing build:run:install:node_modules/rpio Completed in 42109ms
+89 timing build:run:install Completed in 42113ms
+90 timing build:deps Completed in 42126ms
+91 timing build Completed in 42127ms
+92 timing reify:build Completed in 42134ms
+93 timing reify:trash Completed in 1ms
+94 timing reify:save Completed in 499ms
+95 timing reify Completed in 51507ms
+96 silly ADD node_modules/rpio
+97 silly ADD node_modules/rpio/node_modules/nan
+98 silly ADD node_modules/rpi-softspi
+99 silly ADD node_modules/mfrc522-rpi
+100 timing command:i Completed in 51610ms
+101 verbose exit 0
+102 timing npm Completed in 55129ms
+103 info ok

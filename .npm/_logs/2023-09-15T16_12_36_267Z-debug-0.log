@@ -1,0 +1,287 @@
+0 verbose cli /home/pi/.nvm/versions/node/v18.17.1/bin/node /home/pi/.nvm/versions/node/v18.17.1/bin/npm
+1 info using npm@9.6.7
+2 info using node@v18.17.1
+3 timing npm:load:whichnode Completed in 13ms
+4 timing config:load:defaults Completed in 24ms
+5 timing config:load:file:/home/pi/.nvm/versions/node/v18.17.1/lib/node_modules/npm/npmrc Completed in 35ms
+6 timing config:load:builtin Completed in 38ms
+7 timing config:load:cli Completed in 36ms
+8 timing config:load:env Completed in 6ms
+9 timing config:load:file:/home/pi/project01/.npmrc Completed in 2ms
+10 timing config:load:project Completed in 36ms
+11 timing config:load:file:/home/pi/.npmrc Completed in 1ms
+12 timing config:load:user Completed in 5ms
+13 timing config:load:file:/home/pi/.nvm/versions/node/v18.17.1/etc/npmrc Completed in 1ms
+14 timing config:load:global Completed in 3ms
+15 timing config:load:setEnvs Completed in 12ms
+16 timing config:load Completed in 164ms
+17 timing npm:load:configload Completed in 166ms
+18 timing npm:load:mkdirpcache Completed in 3ms
+19 timing npm:load:mkdirplogs Completed in 1ms
+20 verbose title npm install raspi-io
+21 verbose argv "install" "raspi-io"
+22 timing npm:load:setTitle Completed in 13ms
+23 timing config:load:flatten Completed in 34ms
+24 timing npm:load:display Completed in 44ms
+25 verbose logfile logs-max:10 dir:/home/pi/.npm/_logs/2023-09-15T16_12_36_267Z-
+26 verbose logfile /home/pi/.npm/_logs/2023-09-15T16_12_36_267Z-debug-0.log
+27 timing npm:load:logFile Completed in 8878ms
+28 timing npm:load:timers Completed in 1ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 9128ms
+31 timing arborist:ctor Completed in 11ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 3181ms
+34 timing idealTree:userRequests Completed in 18ms
+35 silly idealTree buildDeps
+36 silly fetch manifest raspi-io@*
+37 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+38 http fetch GET 200 https://registry.npmjs.org/raspi-io 6128ms (cache hit)
+39 silly placeDep ROOT raspi-io@11.0.0 OK for: project01@1.0.0 want: *
+40 silly fetch manifest clone@^2.1.2
+41 silly fetch manifest j5-io@^3.1.0
+42 silly fetch manifest j5-io-types@^2.4.0
+43 silly fetch manifest raspi@^6.0.1
+44 silly fetch manifest raspi-board@^7.1.2
+45 silly fetch manifest raspi-gpio@^6.2.1
+46 silly fetch manifest raspi-i2c@^6.2.2
+47 silly fetch manifest raspi-led@^2.1.1
+48 silly fetch manifest raspi-serial@^6.0.0
+49 silly fetch manifest raspi-soft-pwm@^6.0.1
+50 http fetch GET 200 https://registry.npmjs.org/clone 453ms (cache hit)
+51 http fetch GET 200 https://registry.npmjs.org/j5-io 456ms (cache hit)
+52 http fetch GET 200 https://registry.npmjs.org/j5-io-types 459ms (cache hit)
+53 http fetch GET 200 https://registry.npmjs.org/raspi 449ms (cache hit)
+54 http fetch GET 200 https://registry.npmjs.org/raspi-i2c 439ms (cache hit)
+55 http fetch GET 200 https://registry.npmjs.org/raspi-board 462ms (cache hit)
+56 http fetch GET 200 https://registry.npmjs.org/raspi-serial 439ms (cache hit)
+57 http fetch GET 200 https://registry.npmjs.org/raspi-gpio 480ms (cache hit)
+58 http fetch GET 200 https://registry.npmjs.org/raspi-soft-pwm 452ms (cache hit)
+59 http fetch GET 200 https://registry.npmjs.org/raspi-led 485ms (cache hit)
+60 timing idealTree:#root Completed in 6792ms
+61 silly placeDep ROOT clone@2.1.2 OK for: raspi-io@11.0.0 want: ^2.1.2
+62 silly placeDep ROOT j5-io@3.2.0 OK for: raspi-io@11.0.0 want: ^3.1.0
+63 silly fetch manifest abstract-io@^1.6.0
+64 silly fetch manifest j5-io-types@^2.5.0
+65 silly placeDep ROOT j5-io-types@2.5.0 OK for: raspi-io@11.0.0 want: ^2.4.0
+66 silly placeDep ROOT raspi@6.0.1 OK for: raspi-io@11.0.0 want: ^6.0.1
+67 silly fetch manifest raspi-board@^7.0.0
+68 silly placeDep ROOT raspi-board@7.4.0 OK for: raspi-io@11.0.0 want: ^7.1.2
+69 silly placeDep ROOT raspi-gpio@6.2.2 OK for: raspi-io@11.0.0 want: ^6.2.1
+70 silly fetch manifest pigpio@^1.2.1
+71 silly fetch manifest raspi-peripheral@^3.0.3
+72 silly placeDep ROOT raspi-i2c@6.2.4 OK for: raspi-io@11.0.0 want: ^6.2.2
+73 silly fetch manifest i2c-bus@^5.1.0
+74 silly fetch manifest ini-builder@^1.1.1
+75 silly placeDep ROOT raspi-led@2.1.2 OK for: raspi-io@11.0.0 want: ^2.1.1
+76 silly placeDep ROOT raspi-serial@6.0.0 OK for: raspi-io@11.0.0 want: ^6.0.0
+77 silly placeDep ROOT raspi-soft-pwm@6.0.2 OK for: raspi-io@11.0.0 want: ^6.0.1
+78 http fetch GET 200 https://registry.npmjs.org/abstract-io 311ms (cache hit)
+79 http fetch GET 200 https://registry.npmjs.org/raspi-peripheral 229ms (cache hit)
+80 http fetch GET 200 https://registry.npmjs.org/pigpio 246ms (cache hit)
+81 http fetch GET 200 https://registry.npmjs.org/ini-builder 245ms (cache hit)
+82 http fetch GET 200 https://registry.npmjs.org/i2c-bus 262ms (cache hit)
+83 timing idealTree:node_modules/raspi-io Completed in 482ms
+84 timing idealTree:node_modules/clone Completed in 0ms
+85 silly placeDep ROOT abstract-io@1.6.0 OK for: j5-io@3.2.0 want: ^1.6.0
+86 timing idealTree:node_modules/j5-io Completed in 25ms
+87 timing idealTree:node_modules/abstract-io Completed in 1ms
+88 timing idealTree:node_modules/j5-io-types Completed in 0ms
+89 timing idealTree:node_modules/raspi Completed in 0ms
+90 timing idealTree:node_modules/raspi-board Completed in 1ms
+91 silly placeDep ROOT pigpio@1.3.0 OK for: raspi-gpio@6.2.2 want: ^1.2.1
+92 silly placeDep ROOT raspi-peripheral@3.0.4 OK for: raspi-gpio@6.2.2 want: ^3.0.3
+93 timing idealTree:node_modules/raspi-gpio Completed in 64ms
+94 timing idealTree:node_modules/pigpio Completed in 0ms
+95 silly placeDep ROOT i2c-bus@5.2.3 OK for: raspi-i2c@6.2.4 want: ^5.1.0
+96 silly placeDep ROOT ini-builder@1.1.1 OK for: raspi-i2c@6.2.4 want: ^1.1.1
+97 timing idealTree:node_modules/raspi-i2c Completed in 41ms
+98 timing idealTree:node_modules/i2c-bus Completed in 0ms
+99 timing idealTree:node_modules/ini-builder Completed in 0ms
+100 timing idealTree:node_modules/raspi-led Completed in 0ms
+101 timing idealTree:node_modules/raspi-peripheral Completed in 0ms
+102 timing idealTree:node_modules/raspi-serial Completed in 0ms
+103 timing idealTree:node_modules/raspi-soft-pwm Completed in 0ms
+104 timing idealTree:buildDeps Completed in 7435ms
+105 timing idealTree:fixDepFlags Completed in 42ms
+106 timing idealTree Completed in 10712ms
+107 timing reify:loadTrees Completed in 10724ms
+108 timing reify:diffTrees Completed in 61ms
+109 silly reify moves {}
+110 timing reify:retireShallow Completed in 12ms
+111 timing reify:createSparse Completed in 31ms
+112 timing reify:loadBundles Completed in 0ms
+113 silly audit bulk request {
+113 silly audit   '@serialport/binding-abstract': [ '8.0.6' ],
+113 silly audit   '@serialport/binding-mock': [ '8.0.6' ],
+113 silly audit   '@serialport/bindings': [ '8.0.8' ],
+113 silly audit   '@serialport/parser-byte-length': [ '8.0.6' ],
+113 silly audit   '@serialport/parser-cctalk': [ '8.0.6' ],
+113 silly audit   '@serialport/parser-delimiter': [ '8.0.6' ],
+113 silly audit   '@serialport/parser-readline': [ '8.0.6' ],
+113 silly audit   '@serialport/parser-ready': [ '8.0.6' ],
+113 silly audit   '@serialport/parser-regex': [ '8.0.6' ],
+113 silly audit   '@serialport/stream': [ '8.0.6' ],
+113 silly audit   'ansi-regex': [ '2.1.1' ],
+113 silly audit   'ansi-styles': [ '3.2.1' ],
+113 silly audit   'color-convert': [ '1.9.3', '1.2.2' ],
+113 silly audit   aproba: [ '1.2.0' ],
+113 silly audit   'are-we-there-yet': [ '1.1.7' ],
+113 silly audit   'base64-js': [ '1.5.1' ],
+113 silly audit   bindings: [ '1.5.0' ],
+113 silly audit   bl: [ '4.1.0' ],
+113 silly audit   'readable-stream': [ '3.6.2', '2.3.8' ],
+113 silly audit   'browser-serialport': [ '2.1.0' ],
+113 silly audit   buffer: [ '5.7.1' ],
+113 silly audit   chalk: [ '2.1.0' ],
+113 silly audit   chownr: [ '1.1.4' ],
+113 silly audit   'code-point-at': [ '1.1.0' ],
+113 silly audit   'color-name': [ '1.1.3' ],
+113 silly audit   'console-control-strings': [ '1.1.0' ],
+113 silly audit   'core-util-is': [ '1.0.3' ],
+113 silly audit   debug: [ '4.3.4' ],
+113 silly audit   'decompress-response': [ '4.2.1' ],
+113 silly audit   'deep-extend': [ '0.6.0' ],
+113 silly audit   delegates: [ '1.0.0' ],
+113 silly audit   'detect-libc': [ '1.0.3' ],
+113 silly audit   'end-of-stream': [ '1.4.4' ],
+113 silly audit   'escape-string-regexp': [ '1.0.5' ],
+113 silly audit   'expand-template': [ '2.0.3' ],
+113 silly audit   'file-uri-to-path': [ '1.0.0' ],
+113 silly audit   firmata: [ '2.3.0' ],
+113 silly audit   'firmata-io': [ '2.3.0' ],
+113 silly audit   'fs-constants': [ '1.0.0' ],
+113 silly audit   gauge: [ '2.7.4' ],
+113 silly audit   'github-from-package': [ '0.0.0' ],
+113 silly audit   'has-flag': [ '2.0.0' ],
+113 silly audit   'has-unicode': [ '2.0.1' ],
+113 silly audit   ieee754: [ '1.2.1' ],
+113 silly audit   inherits: [ '2.0.4' ],
+113 silly audit   ini: [ '1.3.8' ],
+113 silly audit   'is-fullwidth-code-point': [ '1.0.0' ],
+113 silly audit   isarray: [ '1.0.0' ],
+113 silly audit   'johnny-five': [ '2.1.0' ],
+113 silly audit   'lodash.clonedeep': [ '4.5.0' ],
+113 silly audit   'lodash.debounce': [ '4.0.8' ],
+113 silly audit   'mimic-response': [ '2.1.0' ],
+113 silly audit   minimist: [ '1.2.8' ],
+113 silly audit   'mkdirp-classic': [ '0.5.3' ],
+113 silly audit   ms: [ '2.1.2' ],
+113 silly audit   nan: [ '2.18.0' ],
+113 silly audit   nanotimer: [ '0.3.10' ],
+113 silly audit   'napi-build-utils': [ '1.0.2' ],
+113 silly audit   'node-abi': [ '2.30.1' ],
+113 silly audit   'noop-logger': [ '0.1.1' ],
+113 silly audit   npmlog: [ '4.1.2' ],
+113 silly audit   'number-is-nan': [ '1.0.1' ],
+113 silly audit   'object-assign': [ '4.1.1' ],
+113 silly audit   once: [ '1.4.0' ],
+113 silly audit   'prebuild-install': [ '5.3.6' ],
+113 silly audit   'process-nextick-args': [ '2.0.1' ],
+113 silly audit   pump: [ '3.0.0' ],
+113 silly audit   rc: [ '1.2.8' ],
+113 silly audit   'safe-buffer': [ '5.1.2' ],
+113 silly audit   semver: [ '5.7.2' ],
+113 silly audit   serialport: [ '8.0.8' ],
+113 silly audit   'set-blocking': [ '2.0.0' ],
+113 silly audit   'signal-exit': [ '3.0.7' ],
+113 silly audit   'simple-concat': [ '1.0.1' ],
+113 silly audit   'simple-get': [ '3.1.1' ],
+113 silly audit   string_decoder: [ '1.1.1' ],
+113 silly audit   'string-width': [ '1.0.2' ],
+113 silly audit   'strip-ansi': [ '3.0.1' ],
+113 silly audit   'strip-json-comments': [ '2.0.1' ],
+113 silly audit   'supports-color': [ '4.5.0' ],
+113 silly audit   'tar-fs': [ '2.1.1' ],
+113 silly audit   'tar-stream': [ '2.2.0' ],
+113 silly audit   temporal: [ '0.7.1' ],
+113 silly audit   'tunnel-agent': [ '0.6.0' ],
+113 silly audit   'util-deprecate': [ '1.0.2' ],
+113 silly audit   'which-pm-runs': [ '1.1.0' ],
+113 silly audit   'wide-align': [ '1.1.5' ],
+113 silly audit   wrappy: [ '1.0.2' ],
+113 silly audit   'raspi-io': [ '11.0.0' ],
+113 silly audit   clone: [ '2.1.2' ],
+113 silly audit   'j5-io': [ '3.2.0' ],
+113 silly audit   'j5-io-types': [ '2.5.0' ],
+113 silly audit   raspi: [ '6.0.1' ],
+113 silly audit   'raspi-board': [ '7.4.0' ],
+113 silly audit   'raspi-gpio': [ '6.2.2' ],
+113 silly audit   'raspi-i2c': [ '6.2.4' ],
+113 silly audit   'raspi-led': [ '2.1.2' ],
+113 silly audit   'raspi-serial': [ '6.0.0' ],
+113 silly audit   'raspi-soft-pwm': [ '6.0.2' ],
+113 silly audit   'abstract-io': [ '1.6.0' ],
+113 silly audit   pigpio: [ '1.3.0' ],
+113 silly audit   'raspi-peripheral': [ '3.0.4' ],
+113 silly audit   'i2c-bus': [ '5.2.3' ],
+113 silly audit   'ini-builder': [ '1.1.1' ]
+113 silly audit }
+114 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 1945ms
+115 timing auditReport:getReport Completed in 2014ms
+116 silly audit report {}
+117 timing auditReport:init Completed in 0ms
+118 timing reify:audit Completed in 2022ms
+119 timing reifyNode:node_modules/ini-builder Completed in 1972ms
+120 timing reifyNode:node_modules/clone Completed in 2014ms
+121 timing reifyNode:node_modules/raspi Completed in 2040ms
+122 timing reifyNode:node_modules/raspi-led Completed in 2080ms
+123 timing reifyNode:node_modules/raspi-serial Completed in 2083ms
+124 timing reifyNode:node_modules/raspi-gpio Completed in 2113ms
+125 timing reifyNode:node_modules/raspi-peripheral Completed in 2141ms
+126 timing reifyNode:node_modules/j5-io-types Completed in 2137ms
+127 timing reifyNode:node_modules/raspi-i2c Completed in 2173ms
+128 timing reifyNode:node_modules/abstract-io Completed in 2190ms
+129 timing reifyNode:node_modules/raspi-soft-pwm Completed in 2199ms
+130 timing reifyNode:node_modules/raspi-board Completed in 2198ms
+131 timing reifyNode:node_modules/raspi-io Completed in 2219ms
+132 timing reifyNode:node_modules/j5-io Completed in 2312ms
+133 timing reifyNode:node_modules/pigpio Completed in 2608ms
+134 timing reifyNode:node_modules/i2c-bus Completed in 2612ms
+135 timing reify:unpack Completed in 2618ms
+136 timing reify:unretire Completed in 2ms
+137 timing build:queue Completed in 29ms
+138 info run raspi-gpio@6.2.2 preinstall node_modules/raspi-gpio sh ./script/pigpio.sh
+139 info run raspi-soft-pwm@6.0.2 preinstall node_modules/raspi-soft-pwm sh ./script/pigpio.sh
+140 info run raspi-soft-pwm@6.0.2 preinstall { code: 0, signal: null }
+141 timing build:run:preinstall:node_modules/raspi-soft-pwm Completed in 84ms
+142 info run raspi-gpio@6.2.2 preinstall { code: 0, signal: null }
+143 timing build:run:preinstall:node_modules/raspi-gpio Completed in 170ms
+144 timing build:run:preinstall Completed in 174ms
+145 info run i2c-bus@5.2.3 install node_modules/i2c-bus node-gyp rebuild
+146 info run pigpio@1.3.0 install node_modules/pigpio node-gyp rebuild
+147 info run pigpio@1.3.0 install { code: 0, signal: null }
+148 timing build:run:install:node_modules/pigpio Completed in 38278ms
+149 info run i2c-bus@5.2.3 install { code: 0, signal: null }
+150 timing build:run:install:node_modules/i2c-bus Completed in 50359ms
+151 timing build:run:install Completed in 50360ms
+152 info run raspi-i2c@6.2.4 postinstall node_modules/raspi-i2c echo "Enabling I2C at boot time, you may be asked for your password" && sudo env "PATH=$PATH" script/enable_i2c.js
+153 info run raspi-i2c@6.2.4 postinstall { code: 0, signal: null }
+154 timing build:run:postinstall:node_modules/raspi-i2c Completed in 735ms
+155 timing build:run:postinstall Completed in 737ms
+156 timing build:deps Completed in 51306ms
+157 timing build Completed in 51309ms
+158 timing reify:build Completed in 51314ms
+159 timing reify:trash Completed in 0ms
+160 timing reify:save Completed in 788ms
+161 timing reify Completed in 66066ms
+162 silly ADD node_modules/ini-builder
+163 silly ADD node_modules/i2c-bus
+164 silly ADD node_modules/raspi-peripheral
+165 silly ADD node_modules/pigpio
+166 silly ADD node_modules/abstract-io
+167 silly ADD node_modules/raspi-soft-pwm
+168 silly ADD node_modules/raspi-serial
+169 silly ADD node_modules/raspi-led
+170 silly ADD node_modules/raspi-i2c
+171 silly ADD node_modules/raspi-gpio
+172 silly ADD node_modules/raspi-board
+173 silly ADD node_modules/raspi
+174 silly ADD node_modules/j5-io-types
+175 silly ADD node_modules/j5-io
+176 silly ADD node_modules/clone
+177 silly ADD node_modules/raspi-io
+178 timing command:install Completed in 66175ms
+179 verbose exit 0
+180 timing npm Completed in 77793ms
+181 info ok
